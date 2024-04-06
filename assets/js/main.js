@@ -2,6 +2,7 @@ new WOW().init();
 
 // Minus Plus Counter 
 $(document).ready(function () {
+  $(".loader-wrapper").delay(1500).fadeOut("slow")
   $('.minus').click(function () {
     var $input = $(this).parent().find('input');
     var count = parseInt($input.val()) - 1;
